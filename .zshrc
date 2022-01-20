@@ -1,4 +1,17 @@
-PROMPT="%F{cyan}%n%F{white}@%F{cyan}%m%F{white} %1~ %# "
+NEWLINE=$'\n'
+
+# PROMPT="%F{cyan}%n@%m%F{white} %~ ${NEWLINE}%# "
+
+# Minimal
+PROMPT="%F{cyan}%n%F{white} > "
+
+
+# Add new line after command is submitted
+# precmd() {
+# 	precmd() {
+# 		echo
+# 	}
+# }
 
 # Enable color
 export CLICOLOR=1
